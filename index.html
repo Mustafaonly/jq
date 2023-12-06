@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn
+        {
+
+            position: absolute;
+            top:10%;
+            left: 105px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+<button id="btn" onclick="dt()">view details</button>
+
+
+
+ <script>
+    // save values
+let search="<h1> Cardiologist Doctors Name</h1> ";
+let ali="<h1>Dr.Ali </h1>";
+ let ibrahim="<h1> Dr.Ibrahim </h1>"; 
+//  save values end  
+let patient=prompt("enter name");
+
+if(patient=="cardiologist"){
+    document.write(search+ali+ibrahim);
+    document.getElementById("btn").style.display="block";
+}
+
+else{
+    alert("not here")
+}
+function dt() {
+    document.write("<h1> Doctor Name: Ali Ahmed");
+}
+</script>
+</body>
+</html>
